@@ -1,48 +1,36 @@
-# Glassdoor-Reviews-collection
-Glassdoor Review Scraper 🏢🔍
-This project is an automated web scraper that extracts employee reviews from Glassdoor using Selenium, BeautifulSoup, and Pandas. The extracted data includes company name, ratings, pros, cons, employee status, location, and more. The results are saved in an Excel file for further analysis.
 
-## Features ✨
-✅ Automated Glassdoor Review Extraction – Fetches reviews, ratings, and company details
-✅ Bypasses Bot Detection – Uses undetected_chromedriver to avoid detection
-✅ Dynamic Scrolling – Loads more reviews automatically
-✅ Structured Data Extraction – Collects position, location, employee status, and key sentiments
-✅ Saves to Excel – Stores the extracted data in a structured format
+# 🚀 Selenium Glassdoor Reviews Scraper
 
+This project uses **Selenium with undetected ChromeDriver** to scrape company reviews from [Glassdoor](https://www.glassdoor.co.in/).  
+It currently navigates to the **Oracle reviews page**, waits for the JavaScript content to fully load, and prints the page title.  
+This is a base that you can expand to collect detailed reviews, ratings, and more.
 
-### Requirements 📦
-Python 3.x
+---
 
-Selenium
+## 💻 Tech Stack
+- **Python**
+- **Selenium** – to automate the browser
+- **undetected-chromedriver** – helps bypass anti-bot detection
+- **time** – to wait for page load
 
-BeautifulSoup
+---
 
-Pandas
+## 📦 Installation & Setup
+1. **Clone this repository**
+    ```bash
+    git clone https://github.com/your-username/selenium-glassdoor-scraper.git
+    cd selenium-glassdoor-scraper
+    ```
 
-undetected_chromedriver
+2. **Install the required Python packages**
+    ```bash
+    pip install selenium undetected-chromedriver
+    ```
 
-### Install dependencies using:
+---
 
-pip install undetected-chromedriver pandas beautifulsoup4 selenium openpyxl
-### How It Works ⚡
-1️⃣ Opens Glassdoor review page for a company
-2️⃣ Scrolls down to load more reviews
-3️⃣ Extracts key information such as:
+## ⚙️ How to Run
+Simply execute:
+```bash
+python main.py
 
-Company Name
-
-Overall Rating
-
-Pros & Cons
-
-Employee Position & Status
-
-Location
-
-Review Page URL
-4️⃣ Saves the data in an Excel file (glassdoor_reviews.xlsx)
-
-### Example Output (Excel Format) 📊
-Company Name	Date	Review Page	Position	Location	Employee Status	Overall Rating	Pros	Cons
-Google	2025-04-04	link_here	Engineer	California	Former Employee	4.5	Great culture	Long hours
-License 📝
