@@ -1,36 +1,47 @@
+# 🚀 Glassdoor Oracle Reviews Scraper
 
-# 🚀 Selenium Glassdoor Reviews Scraper
-
-This project uses **Selenium with undetected ChromeDriver** to scrape company reviews from [Glassdoor](https://www.glassdoor.co.in/).  
-It currently navigates to the **Oracle reviews page**, waits for the JavaScript content to fully load, and prints the page title.  
-This is a base that you can expand to collect detailed reviews, ratings, and more.
+This is a **Python web scraping project** that uses **Selenium**, **BeautifulSoup**, and **Pandas** to extract reviews of **Oracle** from Glassdoor.  
+It captures the review title, rating, date, employee role, location, pros, cons, and indicators like whether they recommend the company, approve the CEO, and business outlook.  
+Finally, it saves everything into an **Excel file**.
 
 ---
 
 ## 💻 Tech Stack
 - **Python**
-- **Selenium** – to automate the browser
-- **undetected-chromedriver** – helps bypass anti-bot detection
-- **time** – to wait for page load
+- **Selenium (undetected-chromedriver)** – to automate Chrome and bypass anti-bot detection
+- **BeautifulSoup** – for parsing loaded HTML
+- **Pandas** – to save data into Excel
 
 ---
 
-## 📦 Installation & Setup
-1. **Clone this repository**
-    ```bash
-    git clone https://github.com/your-username/selenium-glassdoor-scraper.git
-    cd selenium-glassdoor-scraper
-    ```
+## 📦 Installation, Setup & Run (all together)
+✅ Clone this repository, install the packages, and run the script — all in one go:
 
-2. **Install the required Python packages**
-    ```bash
-    pip install selenium undetected-chromedriver
-    ```
-
----
-
-## ⚙️ How to Run
-Simply execute:
 ```bash
-python main.py
+git clone https://github.com/your-username/glassdoor-oracle-reviews-scraper.git
+cd glassdoor-oracle-reviews-scraper
+pip install selenium undetected-chromedriver beautifulsoup4 pandas openpyxl
+python new3.py
+
+
+## 🚀 Example Output In Terminal
+
+
+--------------------------------------------------
+Review 1:
+ Company: Oracle
+ Rating: 4.0
+ Date: Mar 10, 2025
+ Title: Great place to work
+ Role: Senior Developer
+ Location: Bengaluru, India
+ Pros: Work-life balance is good
+ Cons: Slow growth
+ Recommend: Yes
+ CEO Approval: Yes
+ Business Outlook: No
+--------------------------------------------------
+...
+Reviews saved to oracle_reviews.xlsx
+
 
